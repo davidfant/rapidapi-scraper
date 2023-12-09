@@ -21,5 +21,8 @@ if __name__ == '__main__':
             if endpoint['responsePayloads']:
               counts['endpoints_with_examples'] += 1
             counts['endpoint_examples'] += len(endpoint['responsePayloads'])
+
+            # for payload in endpoint['responsePayloads']:
+            #   print(os.path.join(root, file))
   
   print(json.dumps(counts, indent=2))
